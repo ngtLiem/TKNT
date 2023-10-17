@@ -50,6 +50,7 @@
             this.trangChủToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ngườiThuêTrọToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.labelHelloTC = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -245,11 +246,21 @@
             this.textBox1.Size = new System.Drawing.Size(244, 21);
             this.textBox1.TabIndex = 2;
             // 
+            // labelHelloTC
+            // 
+            this.labelHelloTC.AutoSize = true;
+            this.labelHelloTC.Location = new System.Drawing.Point(754, 9);
+            this.labelHelloTC.Name = "labelHelloTC";
+            this.labelHelloTC.Size = new System.Drawing.Size(31, 13);
+            this.labelHelloTC.TabIndex = 19;
+            this.labelHelloTC.Text = "Hello";
+            // 
             // TrangChu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(892, 425);
+            this.Controls.Add(this.labelHelloTC);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.textBox2);
@@ -297,5 +308,6 @@
         private System.Windows.Forms.ToolStripMenuItem trangChủToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ngườiThuêTrọToolStripMenuItem;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label labelHelloTC;
     }
 }

@@ -49,6 +49,7 @@
             this.btnDangKy.TabIndex = 5;
             this.btnDangKy.Text = "Đăng ký";
             this.btnDangKy.UseVisualStyleBackColor = true;
+            this.btnDangKy.Click += new System.EventHandler(this.btnDangKy_Click);
             // 
             // combRole
             // 
@@ -156,6 +157,7 @@
             this.Controls.Add(this.label1);
             this.Name = "DangKy";
             this.Text = "DangKy";
+            this.Load += new System.EventHandler(this.DangKy_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

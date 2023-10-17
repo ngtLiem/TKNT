@@ -12,7 +12,7 @@ namespace TKNT
     {
         public void KetNoi(SqlConnection conn)
         {
-            string chuoiketnoi = "SERVER = NGUYEN-THANH-LI; database = QLLIBRARY; integrated Security = True";
+            string chuoiketnoi = "SERVER = NGUYEN-THANH-LI; database = TKNT; integrated Security = True";
             conn.ConnectionString = chuoiketnoi;
             conn.Open();
         }

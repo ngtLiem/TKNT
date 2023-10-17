@@ -35,7 +35,7 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -49,6 +49,8 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.labelHelloND = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -115,14 +117,15 @@
             this.label7.TabIndex = 8;
             this.label7.Text = "Email";
             // 
-            // button5
+            // btnSearch
             // 
-            this.button5.Location = new System.Drawing.Point(771, 349);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 10;
-            this.button5.Text = "Thoát";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnSearch.Location = new System.Drawing.Point(748, 349);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(114, 23);
+            this.btnSearch.TabIndex = 10;
+            this.btnSearch.Text = "Tìm kiếm nhà trọ";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // textBox3
             // 
@@ -152,7 +155,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(252, 349);
+            this.button6.Location = new System.Drawing.Point(195, 349);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(75, 23);
             this.button6.TabIndex = 9;
@@ -181,7 +184,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(516, 349);
+            this.button3.Location = new System.Drawing.Point(383, 349);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 9;
@@ -257,12 +260,32 @@
             this.textBox2.Size = new System.Drawing.Size(303, 21);
             this.textBox2.TabIndex = 2;
             // 
+            // labelHelloND
+            // 
+            this.labelHelloND.AutoSize = true;
+            this.labelHelloND.Location = new System.Drawing.Point(753, 9);
+            this.labelHelloND.Name = "labelHelloND";
+            this.labelHelloND.Size = new System.Drawing.Size(37, 13);
+            this.labelHelloND.TabIndex = 27;
+            this.labelHelloND.Text = "Hello, ";
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(577, 349);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 10;
+            this.button4.Text = "Thoát";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
             // NguoiDung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(891, 396);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.labelHelloND);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button3);
@@ -270,6 +293,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "NguoiDung";
             this.Text = "NguoiDung";
+            this.Load += new System.EventHandler(this.NguoiDung_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -287,7 +311,7 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
@@ -301,5 +325,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label labelHelloND;
+        private System.Windows.Forms.Button button4;
     }
 }

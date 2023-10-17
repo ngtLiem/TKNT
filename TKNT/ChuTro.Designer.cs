@@ -52,6 +52,8 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.labelHelloCT = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -285,15 +287,38 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "THÔNG TIN CHỦ TRỌ";
             // 
+            // labelHelloCT
+            // 
+            this.labelHelloCT.AutoSize = true;
+            this.labelHelloCT.Location = new System.Drawing.Point(759, 9);
+            this.labelHelloCT.Name = "labelHelloCT";
+            this.labelHelloCT.Size = new System.Drawing.Size(37, 13);
+            this.labelHelloCT.TabIndex = 28;
+            this.labelHelloCT.Text = "Hello, ";
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(12, 9);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(56, 13);
+            this.linkLabel1.TabIndex = 29;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Trang chủ";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
             // ChuTro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(881, 499);
+            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.labelHelloCT);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Name = "ChuTro";
             this.Text = "ChuTro";
+            this.Load += new System.EventHandler(this.ChuTro_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -329,5 +354,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelHelloCT;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }

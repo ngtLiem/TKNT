@@ -6,19 +6,29 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace TKNT
-{
+{   
+    
+
     public partial class TrangChu : Form
     {
-        public TrangChu()
+        public string username;
+
+        public SqlConnection conn = new SqlConnection();
+        Ham func = new Ham();
+
+        public TrangChu(string user)
         {
             InitializeComponent();
+            labelHelloTC.Text = "Hello, " + user;
+            username = user;
         }
 
         private void cậpNhậtThôngTinToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            ChuTro chutro = new ChuTro();
+            ChuTro chutro = new ChuTro(username);
             chutro.ShowDialog();
         }
 
@@ -36,14 +46,16 @@ namespace TKNT
 
         private void cậpNhậtThôngTinToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            NguoiDung nd = new NguoiDung();
+            NguoiDung nd = new NguoiDung(username);
             nd.ShowDialog();
         }
 
         private void tìmKiếmNhàTrọToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            TrangChu tc = new TrangChu();
+            TrangChu tc = new TrangChu(username);
             tc.ShowDialog();
         }
+
+        
     }
 }
