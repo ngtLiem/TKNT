@@ -1,0 +1,14 @@
+D:\23-24_HK1\CT291_LTUD\DoAn\TKNT\TKNT\bin\Debug\TKNT.exe
+D:\23-24_HK1\CT291_LTUD\DoAn\TKNT\TKNT\bin\Debug\TKNT.pdb
+D:\23-24_HK1\CT291_LTUD\DoAn\TKNT\TKNT\obj\Debug\ResolveAssemblyReference.cache
+D:\23-24_HK1\CT291_LTUD\DoAn\TKNT\TKNT\obj\Debug\TKNT.Properties.Resources.resources
+D:\23-24_HK1\CT291_LTUD\DoAn\TKNT\TKNT\obj\Debug\TKNT.csproj.GenerateResource.Cache
+D:\23-24_HK1\CT291_LTUD\DoAn\TKNT\TKNT\obj\Debug\TKNT.exe
+D:\23-24_HK1\CT291_LTUD\DoAn\TKNT\TKNT\obj\Debug\TKNT.pdb
+D:\23-24_HK1\CT291_LTUD\DoAn\TKNT\TKNT\obj\Debug\TKNT.DangKy.resources
+D:\23-24_HK1\CT291_LTUD\DoAn\TKNT\TKNT\obj\Debug\TKNT.DangNhap.resources
+D:\23-24_HK1\CT291_LTUD\DoAn\TKNT\TKNT\obj\Debug\TKNT.TrangChu.resources
+D:\23-24_HK1\CT291_LTUD\DoAn\TKNT\TKNT\obj\Debug\TKNT.ChuTro.resources
+D:\23-24_HK1\CT291_LTUD\DoAn\TKNT\TKNT\obj\Debug\TKNT.NhaTro.resources
+D:\23-24_HK1\CT291_LTUD\DoAn\TKNT\TKNT\obj\Debug\TKNT.PhongTro.resources
+D:\23-24_HK1\CT291_LTUD\DoAn\TKNT\TKNT\obj\Debug\TKNT.NguoiDung.resources
