@@ -28,52 +28,52 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.btnDangKy = new System.Windows.Forms.Button();
+            this.combRole = new System.Windows.Forms.ComboBox();
+            this.txtCfpass = new System.Windows.Forms.TextBox();
+            this.txtPass = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtUser = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnHuy = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // btnDangKy
             // 
-            this.button1.Location = new System.Drawing.Point(198, 240);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Đăng ký";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnDangKy.Location = new System.Drawing.Point(198, 240);
+            this.btnDangKy.Name = "btnDangKy";
+            this.btnDangKy.Size = new System.Drawing.Size(75, 23);
+            this.btnDangKy.TabIndex = 5;
+            this.btnDangKy.Text = "Đăng ký";
+            this.btnDangKy.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // combRole
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.combRole.FormattingEnabled = true;
+            this.combRole.Items.AddRange(new object[] {
             "Người dùng",
             "Chủ nhà trọ"});
-            this.comboBox1.Location = new System.Drawing.Point(172, 196);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(261, 21);
-            this.comboBox1.TabIndex = 4;
+            this.combRole.Location = new System.Drawing.Point(172, 196);
+            this.combRole.Name = "combRole";
+            this.combRole.Size = new System.Drawing.Size(261, 21);
+            this.combRole.TabIndex = 4;
             // 
-            // textBox3
+            // txtCfpass
             // 
-            this.textBox3.Location = new System.Drawing.Point(172, 165);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(261, 20);
-            this.textBox3.TabIndex = 3;
+            this.txtCfpass.Location = new System.Drawing.Point(172, 165);
+            this.txtCfpass.Name = "txtCfpass";
+            this.txtCfpass.Size = new System.Drawing.Size(261, 20);
+            this.txtCfpass.TabIndex = 3;
             // 
-            // textBox2
+            // txtPass
             // 
-            this.textBox2.Location = new System.Drawing.Point(172, 134);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(261, 20);
-            this.textBox2.TabIndex = 2;
+            this.txtPass.Location = new System.Drawing.Point(172, 134);
+            this.txtPass.Name = "txtPass";
+            this.txtPass.Size = new System.Drawing.Size(261, 20);
+            this.txtPass.TabIndex = 2;
             // 
             // label5
             // 
@@ -93,12 +93,12 @@
             this.label4.TabIndex = 12;
             this.label4.Text = "Comfirm Password";
             // 
-            // textBox1
+            // txtUser
             // 
-            this.textBox1.Location = new System.Drawing.Point(172, 102);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(261, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtUser.Location = new System.Drawing.Point(172, 102);
+            this.txtUser.Name = "txtUser";
+            this.txtUser.Size = new System.Drawing.Size(261, 20);
+            this.txtUser.TabIndex = 1;
             // 
             // label3
             // 
@@ -128,28 +128,29 @@
             this.label1.TabIndex = 10;
             this.label1.Text = "ĐĂNG KÝ TÀI KHOẢN";
             // 
-            // button2
+            // btnHuy
             // 
-            this.button2.Location = new System.Drawing.Point(326, 240);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Hủy bỏ";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnHuy.Location = new System.Drawing.Point(326, 240);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Size = new System.Drawing.Size(75, 23);
+            this.btnHuy.TabIndex = 6;
+            this.btnHuy.Text = "Hủy bỏ";
+            this.btnHuy.UseVisualStyleBackColor = true;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // DangKy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(525, 287);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.btnHuy);
+            this.Controls.Add(this.btnDangKy);
+            this.Controls.Add(this.combRole);
+            this.Controls.Add(this.txtCfpass);
+            this.Controls.Add(this.txtPass);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtUser);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -162,16 +163,16 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button btnDangKy;
+        private System.Windows.Forms.ComboBox combRole;
+        private System.Windows.Forms.TextBox txtCfpass;
+        private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnHuy;
     }
 }

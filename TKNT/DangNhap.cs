@@ -16,6 +16,12 @@ namespace TKNT
             InitializeComponent();
         }
 
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            DangKy dk = new DangKy();
+            dk.ShowDialog();
+        }
+
        
     }
 }
