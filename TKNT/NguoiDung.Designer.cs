@@ -58,7 +58,7 @@
             this.button2.Location = new System.Drawing.Point(660, 178);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 17;
+            this.button2.TabIndex = 7;
             this.button2.Text = "Upload";
             this.button2.UseVisualStyleBackColor = true;
             // 
@@ -75,7 +75,7 @@
             this.dateTimePicker1.Location = new System.Drawing.Point(93, 108);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(303, 20);
-            this.dateTimePicker1.TabIndex = 15;
+            this.dateTimePicker1.TabIndex = 4;
             // 
             // label8
             // 
@@ -93,7 +93,7 @@
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(303, 21);
-            this.textBox5.TabIndex = 13;
+            this.textBox5.TabIndex = 6;
             // 
             // label6
             // 
@@ -120,7 +120,7 @@
             this.button5.Location = new System.Drawing.Point(771, 349);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 28;
+            this.button5.TabIndex = 10;
             this.button5.Text = "Thoát";
             this.button5.UseVisualStyleBackColor = true;
             // 
@@ -130,7 +130,7 @@
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(303, 21);
-            this.textBox3.TabIndex = 13;
+            this.textBox3.TabIndex = 3;
             // 
             // textBox1
             // 
@@ -138,7 +138,7 @@
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(303, 21);
-            this.textBox1.TabIndex = 12;
+            this.textBox1.TabIndex = 1;
             // 
             // label1
             // 
@@ -155,7 +155,7 @@
             this.button6.Location = new System.Drawing.Point(252, 349);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 30;
+            this.button6.TabIndex = 9;
             this.button6.Text = "Sửa";
             this.button6.UseVisualStyleBackColor = true;
             // 
@@ -184,7 +184,7 @@
             this.button3.Location = new System.Drawing.Point(516, 349);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 29;
+            this.button3.TabIndex = 9;
             this.button3.Text = "Xóa";
             this.button3.UseVisualStyleBackColor = true;
             // 
@@ -193,7 +193,7 @@
             this.button1.Location = new System.Drawing.Point(37, 349);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 27;
+            this.button1.TabIndex = 8;
             this.button1.Text = "Lưu";
             this.button1.UseVisualStyleBackColor = true;
             // 
@@ -213,7 +213,7 @@
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(303, 21);
-            this.textBox4.TabIndex = 13;
+            this.textBox4.TabIndex = 5;
             // 
             // groupBox1
             // 
@@ -255,7 +255,7 @@
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(303, 21);
-            this.textBox2.TabIndex = 13;
+            this.textBox2.TabIndex = 2;
             // 
             // NguoiDung
             // 
