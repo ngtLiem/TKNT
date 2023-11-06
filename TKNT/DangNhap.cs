@@ -43,7 +43,7 @@ namespace TKNT
             if (reader.Read())
             {
                 role = reader.GetValue(0).ToString();
-                if (role == "Ch? nhà tr?")
+                if (role == "Chủ nhà trọ")
                 {
                     MessageBox.Show("Đăng nhập thành công!");
                     DangNhap dn = new DangNhap();
@@ -53,7 +53,7 @@ namespace TKNT
                     TrangChu tc = new TrangChu(tendn);
                     
                 }
-                else if (role == "Ngu?i dùng")
+                else if (role == "Người dùng")
                 {
                     MessageBox.Show("Đăng nhập thành công!");
                     NguoiDung nd = new NguoiDung(tendn);

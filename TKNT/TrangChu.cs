@@ -56,6 +56,40 @@ namespace TKNT
             tc.ShowDialog();
         }
 
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            string tiennghi = combTienNghi.Text;
+            string diachi = txtDiaChi.Text;
+            if (txtMucGia.Text != "")
+            {
+                int mucgia = Convert.ToInt32(txtMucGia.Text);
+                string sql = "select nt.NT_MA, nt.NT_TEN, pt.PT_TEN, pt.PT_DIENTICH, pt.PT_GIA, nt.NT_DIACHI, tn.TN_TEN, pt.PT_MOTA from CHITIET_TN ct join PHONG_TRO pt on ct.PT_MA=pt.PT_MA join TIEN_NGHI tn on ct.TN_MA=tn.TN_MA join NHA_TRO nt on nt.NT_MA=pt.NT_MA where nt.NT_DIACHI like '%" + diachi + "%' or pt.PT_GIA like '%" + mucgia + "%' or tn.TN_TEN like '%" + tiennghi + "%'";
+                func.HienthiDulieuDG(dataGridViewSearch, sql, conn);
+
+            }
+            else
+            {
+                string mucgia = " ";
+                string sql = "select nt.NT_MA, nt.NT_TEN, pt.PT_TEN, pt.PT_DIENTICH, pt.PT_GIA, nt.NT_DIACHI, tn.TN_TEN, pt.PT_MOTA from CHITIET_TN ct join PHONG_TRO pt on ct.PT_MA=pt.PT_MA join TIEN_NGHI tn on ct.TN_MA=tn.TN_MA join NHA_TRO nt on nt.NT_MA=pt.NT_MA where nt.NT_DIACHI like '%" + diachi + "%' or pt.PT_GIA like '%" + mucgia + "%' or tn.TN_TEN like '%" + tiennghi + "%'";
+                func.HienthiDulieuDG(dataGridViewSearch, sql, conn);
+            }
+            
+        }
+
+        private void TrangChu_Load(object sender, EventArgs e)
+        {
+            func.KetNoi(conn);
+            func.HienthiDulieuDG(dataGridViewSearch, "select nt.NT_MA, nt.NT_TEN, pt.PT_TEN, pt.PT_DIENTICH, pt.PT_GIA, nt.NT_DIACHI, tn.TN_TEN, pt.PT_MOTA from CHITIET_TN ct join PHONG_TRO pt on ct.PT_MA=pt.PT_MA join TIEN_NGHI tn on ct.TN_MA=tn.TN_MA join NHA_TRO nt on nt.NT_MA=pt.NT_MA where nt.NT_DIACHI like '%%' or pt.PT_GIA like '%%' or tn.TN_TEN like '%%' order by pt.PT_GIA", conn);
+            func.LoadComb(combTienNghi, "select * from TIEN_NGHI", conn, "TN_TEN", "TN_MA");
+        }
+
+      
+
+       
+
+       
+        
+       
         
     }
 }

@@ -32,28 +32,26 @@
             this.chủTrọToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cậpNhậtThôngTinToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.thêmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.txtDiaChi = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.hỗTrợToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tìmKiếmNhàTrọToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.combTienNghi = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewSearch = new System.Windows.Forms.DataGridView();
             this.cậpNhậtThôngTinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.trangChủToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ngườiThuêTrọToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtMucGia = new System.Windows.Forms.TextBox();
             this.labelHelloTC = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSearch)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -88,22 +86,23 @@
             this.thêmToolStripMenuItem.Text = "Thêm phòng trọ";
             this.thêmToolStripMenuItem.Click += new System.EventHandler(this.thêmToolStripMenuItem_Click);
             // 
-            // button1
+            // btnSearch
             // 
-            this.button1.Location = new System.Drawing.Point(398, 198);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Tìm kiếm";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnSearch.Location = new System.Drawing.Point(398, 198);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.TabIndex = 4;
+            this.btnSearch.Text = "Tìm kiếm";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
-            // textBox2
+            // txtDiaChi
             // 
-            this.textBox2.Location = new System.Drawing.Point(340, 141);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(244, 21);
-            this.textBox2.TabIndex = 3;
+            this.txtDiaChi.Location = new System.Drawing.Point(340, 141);
+            this.txtDiaChi.Multiline = true;
+            this.txtDiaChi.Name = "txtDiaChi";
+            this.txtDiaChi.Size = new System.Drawing.Size(244, 21);
+            this.txtDiaChi.TabIndex = 3;
             // 
             // label5
             // 
@@ -128,13 +127,14 @@
             this.tìmKiếmNhàTrọToolStripMenuItem.Text = "Tìm kiếm nhà trọ";
             this.tìmKiếmNhàTrọToolStripMenuItem.Click += new System.EventHandler(this.tìmKiếmNhàTrọToolStripMenuItem_Click);
             // 
-            // comboBox1
+            // combTienNghi
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(340, 87);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(244, 21);
-            this.comboBox1.TabIndex = 1;
+            this.combTienNghi.FormattingEnabled = true;
+            this.combTienNghi.Location = new System.Drawing.Point(340, 87);
+            this.combTienNghi.Name = "combTienNghi";
+            this.combTienNghi.Size = new System.Drawing.Size(244, 21);
+            this.combTienNghi.TabIndex = 1;
+           // this.combTienNghi.SelectedIndexChanged += new System.EventHandler(this.combTienNghi_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -174,19 +174,9 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "TÌM KIẾM NHÀ TRỌ";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(563, 33);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(265, 121);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
-            // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.Controls.Add(this.dataGridViewSearch);
             this.groupBox1.Location = new System.Drawing.Point(12, 242);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(855, 171);
@@ -194,14 +184,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh sách nhà trọ";
             // 
-            // dataGridView1
+            // dataGridViewSearch
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(29, 33);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(517, 121);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGridViewSearch.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dataGridViewSearch.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewSearch.Location = new System.Drawing.Point(23, 33);
+            this.dataGridViewSearch.Name = "dataGridViewSearch";
+            this.dataGridViewSearch.Size = new System.Drawing.Size(807, 121);
+            this.dataGridViewSearch.TabIndex = 0;
             // 
             // cậpNhậtThôngTinToolStripMenuItem
             // 
@@ -238,13 +228,13 @@
             this.ngườiThuêTrọToolStripMenuItem.Size = new System.Drawing.Size(97, 20);
             this.ngườiThuêTrọToolStripMenuItem.Text = "Người thuê trọ";
             // 
-            // textBox1
+            // txtMucGia
             // 
-            this.textBox1.Location = new System.Drawing.Point(340, 114);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(244, 21);
-            this.textBox1.TabIndex = 2;
+            this.txtMucGia.Location = new System.Drawing.Point(340, 114);
+            this.txtMucGia.Multiline = true;
+            this.txtMucGia.Name = "txtMucGia";
+            this.txtMucGia.Size = new System.Drawing.Size(244, 21);
+            this.txtMucGia.TabIndex = 2;
             // 
             // labelHelloTC
             // 
@@ -261,11 +251,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(892, 425);
             this.Controls.Add(this.labelHelloTC);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.txtMucGia);
+            this.Controls.Add(this.txtDiaChi);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.combTienNghi);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -274,9 +264,9 @@
             this.Controls.Add(this.menuStrip1);
             this.Name = "TrangChu";
             this.Text = "TrangChu";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.TrangChu_Load);
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSearch)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -290,24 +280,23 @@
         private System.Windows.Forms.ToolStripMenuItem chủTrọToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cậpNhậtThôngTinToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem thêmToolStripMenuItem;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.TextBox txtDiaChi;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ToolStripMenuItem hỗTrợToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tìmKiếmNhàTrọToolStripMenuItem;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox combTienNghi;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewSearch;
         private System.Windows.Forms.ToolStripMenuItem cậpNhậtThôngTinToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem trangChủToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ngườiThuêTrọToolStripMenuItem;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtMucGia;
         private System.Windows.Forms.Label labelHelloTC;
     }
 }
