@@ -45,7 +45,7 @@ namespace TKNT
                 role = reader.GetValue(0).ToString();
                 if (role == "Chủ nhà trọ")
                 {
-                    MessageBox.Show("Đăng nhập thành công!");
+                   // MessageBox.Show("Đăng nhập thành công!");
                     DangNhap dn = new DangNhap();
                     dn.Close();
                     ChuTro ct = new ChuTro(tendn);
@@ -55,7 +55,7 @@ namespace TKNT
                 }
                 else if (role == "Người dùng")
                 {
-                    MessageBox.Show("Đăng nhập thành công!");
+                    //MessageBox.Show("Đăng nhập thành công!");
                     NguoiDung nd = new NguoiDung(tendn);
                     nd.ShowDialog();
                     DangNhap dn = new DangNhap();
