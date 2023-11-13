@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtManhatro = new System.Windows.Forms.TextBox();
+            this.txtMaphongtro = new System.Windows.Forms.TextBox();
+            this.txtTenphong = new System.Windows.Forms.TextBox();
+            this.txtDientich = new System.Windows.Forms.TextBox();
+            this.txtMota = new System.Windows.Forms.TextBox();
+            this.txtGia = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -42,30 +42,25 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnLuu = new System.Windows.Forms.Button();
+            this.btnThem = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnThoat = new System.Windows.Forms.Button();
+            this.btnSua = new System.Windows.Forms.Button();
+            this.labelHelloPT = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox6);
+            this.groupBox1.Controls.Add(this.txtManhatro);
+            this.groupBox1.Controls.Add(this.txtMaphongtro);
+            this.groupBox1.Controls.Add(this.txtTenphong);
+            this.groupBox1.Controls.Add(this.txtDientich);
+            this.groupBox1.Controls.Add(this.txtMota);
+            this.groupBox1.Controls.Add(this.txtGia);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label6);
@@ -79,48 +74,48 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin phòng trọ";
             // 
-            // textBox1
+            // txtManhatro
             // 
-            this.textBox1.Location = new System.Drawing.Point(101, 34);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(236, 20);
-            this.textBox1.TabIndex = 0;
+            this.txtManhatro.Location = new System.Drawing.Point(101, 34);
+            this.txtManhatro.Name = "txtManhatro";
+            this.txtManhatro.Size = new System.Drawing.Size(236, 20);
+            this.txtManhatro.TabIndex = 0;
             // 
-            // textBox2
+            // txtMaphongtro
             // 
-            this.textBox2.Location = new System.Drawing.Point(101, 64);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(236, 20);
-            this.textBox2.TabIndex = 0;
+            this.txtMaphongtro.Location = new System.Drawing.Point(101, 64);
+            this.txtMaphongtro.Name = "txtMaphongtro";
+            this.txtMaphongtro.Size = new System.Drawing.Size(236, 20);
+            this.txtMaphongtro.TabIndex = 0;
             // 
-            // textBox3
+            // txtTenphong
             // 
-            this.textBox3.Location = new System.Drawing.Point(101, 96);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(236, 20);
-            this.textBox3.TabIndex = 0;
+            this.txtTenphong.Location = new System.Drawing.Point(101, 96);
+            this.txtTenphong.Name = "txtTenphong";
+            this.txtTenphong.Size = new System.Drawing.Size(236, 20);
+            this.txtTenphong.TabIndex = 0;
             // 
-            // textBox4
+            // txtDientich
             // 
-            this.textBox4.Location = new System.Drawing.Point(101, 129);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(236, 20);
-            this.textBox4.TabIndex = 0;
+            this.txtDientich.Location = new System.Drawing.Point(101, 129);
+            this.txtDientich.Name = "txtDientich";
+            this.txtDientich.Size = new System.Drawing.Size(236, 20);
+            this.txtDientich.TabIndex = 0;
             // 
-            // textBox5
+            // txtMota
             // 
-            this.textBox5.Location = new System.Drawing.Point(599, 64);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(256, 85);
-            this.textBox5.TabIndex = 0;
+            this.txtMota.Location = new System.Drawing.Point(599, 64);
+            this.txtMota.Multiline = true;
+            this.txtMota.Name = "txtMota";
+            this.txtMota.Size = new System.Drawing.Size(256, 85);
+            this.txtMota.TabIndex = 0;
             // 
-            // textBox6
+            // txtGia
             // 
-            this.textBox6.Location = new System.Drawing.Point(599, 34);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(256, 20);
-            this.textBox6.TabIndex = 0;
+            this.txtGia.Location = new System.Drawing.Point(599, 34);
+            this.txtGia.Name = "txtGia";
+            this.txtGia.Size = new System.Drawing.Size(256, 20);
+            this.txtGia.TabIndex = 0;
             // 
             // label1
             // 
@@ -180,28 +175,31 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(8, 344);
+            this.dataGridView1.Location = new System.Drawing.Point(8, 290);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(874, 148);
+            this.dataGridView1.Size = new System.Drawing.Size(874, 202);
             this.dataGridView1.TabIndex = 15;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // button5
+            // btnLuu
             // 
-            this.button5.Location = new System.Drawing.Point(33, 306);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 13;
-            this.button5.Text = "Lưu";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnLuu.Location = new System.Drawing.Point(25, 252);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(75, 23);
+            this.btnLuu.TabIndex = 13;
+            this.btnLuu.Text = "Lưu";
+            this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
-            // button1
+            // btnThem
             // 
-            this.button1.Location = new System.Drawing.Point(218, 306);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Thêm";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnThem.Location = new System.Drawing.Point(219, 252);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(75, 23);
+            this.btnThem.TabIndex = 14;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.button1_Click);
             // 
             // label7
             // 
@@ -213,107 +211,65 @@
             this.label7.TabIndex = 9;
             this.label7.Text = "PHÒNG TRỌ";
             // 
-            // button3
+            // btnXoa
             // 
-            this.button3.Location = new System.Drawing.Point(631, 306);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "Xóa";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnXoa.Location = new System.Drawing.Point(624, 252);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(75, 23);
+            this.btnXoa.TabIndex = 11;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button4
+            // btnThoat
             // 
-            this.button4.Location = new System.Drawing.Point(790, 306);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 12;
-            this.button4.Text = "Thoát";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnThoat.Location = new System.Drawing.Point(788, 252);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(75, 23);
+            this.btnThoat.TabIndex = 12;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // button2
+            // btnSua
             // 
-            this.button2.Location = new System.Drawing.Point(415, 306);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Sửa";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnSua.Location = new System.Drawing.Point(416, 252);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(75, 23);
+            this.btnSua.TabIndex = 10;
+            this.btnSua.Text = "Sửa";
+            this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
-            // checkBox1
+            // labelHelloPT
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(20, 32);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(105, 17);
-            this.checkBox1.TabIndex = 1;
-            this.checkBox1.Text = "TN01 - Máy lạnh";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(178, 32);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(102, 17);
-            this.checkBox2.TabIndex = 2;
-            this.checkBox2.Text = "TN02 - Máy giặt";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(338, 32);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(127, 17);
-            this.checkBox3.TabIndex = 2;
-            this.checkBox3.Text = "TN03 - Máy điều hòa";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.checkBox2);
-            this.groupBox2.Controls.Add(this.checkBox1);
-            this.groupBox2.Controls.Add(this.checkBox3);
-            this.groupBox2.Controls.Add(this.checkBox4);
-            this.groupBox2.Location = new System.Drawing.Point(11, 231);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(871, 69);
-            this.groupBox2.TabIndex = 17;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Tiện nghi";
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(533, 32);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(136, 17);
-            this.checkBox4.TabIndex = 2;
-            this.checkBox4.Text = "TN04 - Máy nước nóng";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.labelHelloPT.AutoSize = true;
+            this.labelHelloPT.Location = new System.Drawing.Point(753, 24);
+            this.labelHelloPT.Name = "labelHelloPT";
+            this.labelHelloPT.Size = new System.Drawing.Size(37, 13);
+            this.labelHelloPT.TabIndex = 29;
+            this.labelHelloPT.Text = "Hello, ";
             // 
             // PhongTro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(891, 502);
+            this.Controls.Add(this.labelHelloPT);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnLuu);
+            this.Controls.Add(this.btnThem);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.btnXoa);
+            this.Controls.Add(this.btnThoat);
+            this.Controls.Add(this.btnSua);
             this.Name = "PhongTro";
             this.Text = "PhongTro";
+            this.Load += new System.EventHandler(this.PhongTro_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -322,12 +278,12 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtManhatro;
+        private System.Windows.Forms.TextBox txtMaphongtro;
+        private System.Windows.Forms.TextBox txtTenphong;
+        private System.Windows.Forms.TextBox txtDientich;
+        private System.Windows.Forms.TextBox txtMota;
+        private System.Windows.Forms.TextBox txtGia;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label6;
@@ -335,16 +291,12 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnLuu;
+        private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Button btnThoat;
+        private System.Windows.Forms.Button btnSua;
+        private System.Windows.Forms.Label labelHelloPT;
     }
 }

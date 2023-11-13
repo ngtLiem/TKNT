@@ -15,6 +15,8 @@ namespace TKNT
     public partial class TrangChu : Form
     {
         public string username;
+        public string machutro;
+        public string manhatro;
 
         public SqlConnection conn = new SqlConnection();
         Ham func = new Ham();
@@ -24,6 +26,8 @@ namespace TKNT
             InitializeComponent();
             labelHelloTC.Text = "Hello, " + user;
             username = user;
+
+            
         }
 
         private void cậpNhậtThôngTinToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -34,13 +38,23 @@ namespace TKNT
 
         private void thêmNhàTroToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            NhaTro nt = new NhaTro();
+            NhaTro nt = new NhaTro(username);
             nt.ShowDialog();
         }
 
         private void thêmToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            PhongTro pt = new PhongTro();
+            string sql = "select ct.CNT_MA, nt.NT_MA from CHU_NHA_TRO ct, NHA_TRO nt where username = '" + username + "'";
+            SqlCommand comd = new SqlCommand(sql, conn);
+            SqlDataReader reader = comd.ExecuteReader();
+            if (reader.Read())
+            {
+                machutro = reader.GetValue(0).ToString();
+                manhatro = reader.GetValue(1).ToString();
+            }
+            reader.Close();
+
+            PhongTro pt = new PhongTro(username, manhatro);
             pt.ShowDialog();
         }
 
