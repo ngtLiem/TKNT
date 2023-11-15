@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NguoiDung));
             this.btnLoad_ND = new System.Windows.Forms.Button();
             this.pictureND = new System.Windows.Forms.PictureBox();
             this.dateTimeBirthday = new System.Windows.Forms.DateTimePicker();
@@ -61,12 +62,14 @@
             // 
             // btnLoad_ND
             // 
+            this.btnLoad_ND.BackColor = System.Drawing.Color.Orange;
+            this.btnLoad_ND.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLoad_ND.Location = new System.Drawing.Point(660, 186);
             this.btnLoad_ND.Name = "btnLoad_ND";
             this.btnLoad_ND.Size = new System.Drawing.Size(75, 23);
             this.btnLoad_ND.TabIndex = 7;
             this.btnLoad_ND.Text = "Upload";
-            this.btnLoad_ND.UseVisualStyleBackColor = true;
+            this.btnLoad_ND.UseVisualStyleBackColor = false;
             this.btnLoad_ND.Click += new System.EventHandler(this.btnLoad_ND_Click);
             // 
             // pictureND
@@ -80,6 +83,8 @@
             // 
             // dateTimeBirthday
             // 
+            this.dateTimeBirthday.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.dateTimeBirthday.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.dateTimeBirthday.CustomFormat = "dd/MM/yyyy";
             this.dateTimeBirthday.Location = new System.Drawing.Point(93, 108);
             this.dateTimeBirthday.Name = "dateTimeBirthday";
@@ -99,6 +104,8 @@
             // 
             // txtEmail
             // 
+            this.txtEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtEmail.Location = new System.Drawing.Point(93, 168);
             this.txtEmail.Multiline = true;
             this.txtEmail.Name = "txtEmail";
@@ -127,16 +134,20 @@
             // 
             // btnSearch
             // 
+            this.btnSearch.BackColor = System.Drawing.Color.Orange;
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSearch.Location = new System.Drawing.Point(748, 349);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(114, 23);
             this.btnSearch.TabIndex = 10;
             this.btnSearch.Text = "Tìm kiếm nhà trọ";
-            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.UseVisualStyleBackColor = false;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // txtHoten
             // 
+            this.txtHoten.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.txtHoten.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtHoten.Location = new System.Drawing.Point(93, 76);
             this.txtHoten.Multiline = true;
             this.txtHoten.Name = "txtHoten";
@@ -145,6 +156,8 @@
             // 
             // txtMaSo
             // 
+            this.txtMaSo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.txtMaSo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtMaSo.Location = new System.Drawing.Point(93, 17);
             this.txtMaSo.Multiline = true;
             this.txtMaSo.Name = "txtMaSo";
@@ -154,6 +167,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(199, 26);
             this.label1.Name = "label1";
@@ -163,12 +177,14 @@
             // 
             // btnSua
             // 
+            this.btnSua.BackColor = System.Drawing.Color.Orange;
+            this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSua.Location = new System.Drawing.Point(348, 349);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(75, 23);
             this.btnSua.TabIndex = 9;
             this.btnSua.Text = "Sửa";
-            this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.UseVisualStyleBackColor = false;
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // label2
@@ -193,22 +209,26 @@
             // 
             // btnXoa
             // 
+            this.btnXoa.BackColor = System.Drawing.Color.Orange;
+            this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnXoa.Location = new System.Drawing.Point(473, 349);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(98, 23);
             this.btnXoa.TabIndex = 9;
             this.btnXoa.Text = "Xóa tài khoản";
-            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.UseVisualStyleBackColor = false;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnLuu
             // 
+            this.btnLuu.BackColor = System.Drawing.Color.Orange;
+            this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLuu.Location = new System.Drawing.Point(219, 349);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(75, 23);
             this.btnLuu.TabIndex = 8;
             this.btnLuu.Text = "Lưu";
-            this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.UseVisualStyleBackColor = false;
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // label3
@@ -223,6 +243,8 @@
             // 
             // txtPhone
             // 
+            this.txtPhone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.txtPhone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPhone.Location = new System.Drawing.Point(93, 138);
             this.txtPhone.Multiline = true;
             this.txtPhone.Name = "txtPhone";
@@ -231,6 +253,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.label_pic_nd);
             this.groupBox1.Controls.Add(this.btnLoad_ND);
             this.groupBox1.Controls.Add(this.pictureND);
@@ -267,6 +290,8 @@
             // 
             // txtDiachi
             // 
+            this.txtDiachi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.txtDiachi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDiachi.Location = new System.Drawing.Point(93, 198);
             this.txtDiachi.Multiline = true;
             this.txtDiachi.Name = "txtDiachi";
@@ -295,6 +320,8 @@
             // 
             // txtUser
             // 
+            this.txtUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.txtUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtUser.Location = new System.Drawing.Point(93, 46);
             this.txtUser.Multiline = true;
             this.txtUser.Name = "txtUser";
@@ -304,6 +331,7 @@
             // labelHelloND
             // 
             this.labelHelloND.AutoSize = true;
+            this.labelHelloND.BackColor = System.Drawing.Color.Transparent;
             this.labelHelloND.Location = new System.Drawing.Point(753, 9);
             this.labelHelloND.Name = "labelHelloND";
             this.labelHelloND.Size = new System.Drawing.Size(37, 13);
@@ -312,28 +340,34 @@
             // 
             // btnThoat
             // 
+            this.btnThoat.BackColor = System.Drawing.Color.Orange;
+            this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnThoat.Location = new System.Drawing.Point(619, 349);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(75, 23);
             this.btnThoat.TabIndex = 10;
             this.btnThoat.Text = "Thoát";
-            this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.UseVisualStyleBackColor = false;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnCapNhat
             // 
+            this.btnCapNhat.BackColor = System.Drawing.Color.Orange;
+            this.btnCapNhat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCapNhat.Location = new System.Drawing.Point(27, 349);
             this.btnCapNhat.Name = "btnCapNhat";
             this.btnCapNhat.Size = new System.Drawing.Size(130, 23);
             this.btnCapNhat.TabIndex = 8;
             this.btnCapNhat.Text = "Cập nhật thông tin";
-            this.btnCapNhat.UseVisualStyleBackColor = true;
+            this.btnCapNhat.UseVisualStyleBackColor = false;
             this.btnCapNhat.Click += new System.EventHandler(this.btnCapNhat_Click);
             // 
             // NguoiDung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(891, 396);
             this.Controls.Add(this.labelHelloND);
             this.Controls.Add(this.btnThoat);

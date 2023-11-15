@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TrangChu));
             this.thêmNhàTroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.chủTrọToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cậpNhậtThôngTinToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -37,7 +38,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.hỗTrợToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tìmKiếmNhàTrọToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.combTienNghi = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -50,6 +50,7 @@
             this.ngườiThuêTrọToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.txtMucGia = new System.Windows.Forms.TextBox();
             this.labelHelloTC = new System.Windows.Forms.Label();
+            this.txtTiennghi = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSearch)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -88,17 +89,20 @@
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(398, 198);
+            this.btnSearch.BackColor = System.Drawing.Color.Orange;
+            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSearch.Location = new System.Drawing.Point(454, 199);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(75, 23);
             this.btnSearch.TabIndex = 4;
             this.btnSearch.Text = "Tìm kiếm";
-            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.UseVisualStyleBackColor = false;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // txtDiaChi
             // 
-            this.txtDiaChi.Location = new System.Drawing.Point(340, 141);
+            this.txtDiaChi.Location = new System.Drawing.Point(396, 142);
             this.txtDiaChi.Multiline = true;
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(244, 21);
@@ -107,8 +111,9 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(192, 146);
+            this.label5.Location = new System.Drawing.Point(248, 147);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(81, 16);
             this.label5.TabIndex = 13;
@@ -127,20 +132,12 @@
             this.tìmKiếmNhàTrọToolStripMenuItem.Text = "Tìm kiếm nhà trọ";
             this.tìmKiếmNhàTrọToolStripMenuItem.Click += new System.EventHandler(this.tìmKiếmNhàTrọToolStripMenuItem_Click);
             // 
-            // combTienNghi
-            // 
-            this.combTienNghi.FormattingEnabled = true;
-            this.combTienNghi.Location = new System.Drawing.Point(340, 87);
-            this.combTienNghi.Name = "combTienNghi";
-            this.combTienNghi.Size = new System.Drawing.Size(244, 21);
-            this.combTienNghi.TabIndex = 1;
-           // this.combTienNghi.SelectedIndexChanged += new System.EventHandler(this.combTienNghi_SelectedIndexChanged);
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(192, 119);
+            this.label4.Location = new System.Drawing.Point(248, 120);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(89, 16);
             this.label4.TabIndex = 12;
@@ -149,8 +146,9 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(192, 92);
+            this.label3.Location = new System.Drawing.Point(248, 93);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(116, 16);
             this.label3.TabIndex = 11;
@@ -167,8 +165,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(304, 32);
+            this.label1.Location = new System.Drawing.Point(390, 32);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(264, 31);
             this.label1.TabIndex = 9;
@@ -176,21 +175,23 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.dataGridViewSearch);
             this.groupBox1.Location = new System.Drawing.Point(12, 242);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(855, 171);
+            this.groupBox1.Size = new System.Drawing.Size(917, 171);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh sách nhà trọ";
             // 
             // dataGridViewSearch
             // 
-            this.dataGridViewSearch.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dataGridViewSearch.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.dataGridViewSearch.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridViewSearch.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewSearch.Location = new System.Drawing.Point(23, 33);
             this.dataGridViewSearch.Name = "dataGridViewSearch";
-            this.dataGridViewSearch.Size = new System.Drawing.Size(807, 121);
+            this.dataGridViewSearch.Size = new System.Drawing.Size(874, 121);
             this.dataGridViewSearch.TabIndex = 0;
             // 
             // cậpNhậtThôngTinToolStripMenuItem
@@ -202,6 +203,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.Transparent;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.trangChủToolStripMenuItem,
             this.ngườiThuêTrọToolStripMenuItem,
@@ -209,7 +211,7 @@
             this.hỗTrợToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(892, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(941, 24);
             this.menuStrip1.TabIndex = 18;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -230,7 +232,7 @@
             // 
             // txtMucGia
             // 
-            this.txtMucGia.Location = new System.Drawing.Point(340, 114);
+            this.txtMucGia.Location = new System.Drawing.Point(396, 115);
             this.txtMucGia.Multiline = true;
             this.txtMucGia.Name = "txtMucGia";
             this.txtMucGia.Size = new System.Drawing.Size(244, 21);
@@ -239,23 +241,34 @@
             // labelHelloTC
             // 
             this.labelHelloTC.AutoSize = true;
-            this.labelHelloTC.Location = new System.Drawing.Point(754, 9);
+            this.labelHelloTC.BackColor = System.Drawing.Color.Transparent;
+            this.labelHelloTC.Location = new System.Drawing.Point(791, 9);
             this.labelHelloTC.Name = "labelHelloTC";
             this.labelHelloTC.Size = new System.Drawing.Size(31, 13);
             this.labelHelloTC.TabIndex = 19;
             this.labelHelloTC.Text = "Hello";
             // 
+            // txtTiennghi
+            // 
+            this.txtTiennghi.Location = new System.Drawing.Point(396, 88);
+            this.txtTiennghi.Multiline = true;
+            this.txtTiennghi.Name = "txtTiennghi";
+            this.txtTiennghi.Size = new System.Drawing.Size(244, 21);
+            this.txtTiennghi.TabIndex = 2;
+            // 
             // TrangChu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(892, 425);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(941, 425);
             this.Controls.Add(this.labelHelloTC);
             this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.txtTiennghi);
             this.Controls.Add(this.txtMucGia);
             this.Controls.Add(this.txtDiaChi);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.combTienNghi);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -285,7 +298,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ToolStripMenuItem hỗTrợToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tìmKiếmNhàTrọToolStripMenuItem;
-        private System.Windows.Forms.ComboBox combTienNghi;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
@@ -298,5 +310,6 @@
         private System.Windows.Forms.ToolStripMenuItem ngườiThuêTrọToolStripMenuItem;
         private System.Windows.Forms.TextBox txtMucGia;
         private System.Windows.Forms.Label labelHelloTC;
+        private System.Windows.Forms.TextBox txtTiennghi;
     }
 }

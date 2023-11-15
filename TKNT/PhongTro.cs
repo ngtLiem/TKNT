@@ -26,6 +26,8 @@ namespace TKNT
             labelHelloPT.Text = "Hello, " + user;
             username = user;
             manhatro = mant;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
         }
 
@@ -47,6 +49,8 @@ namespace TKNT
             txtDientich.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
             txtGia.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
             txtMota.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
+            btnSua.Enabled = true;
+            btnXoa.Enabled = true;
         }
 
         private void button1_Click(object sender, EventArgs e)

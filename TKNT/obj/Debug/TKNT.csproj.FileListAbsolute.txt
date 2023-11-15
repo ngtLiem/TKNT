@@ -12,3 +12,4 @@ D:\23-24_HK1\CT291_LTUD\DoAn\TKNT\TKNT\obj\Debug\TKNT.ChuTro.resources
 D:\23-24_HK1\CT291_LTUD\DoAn\TKNT\TKNT\obj\Debug\TKNT.NhaTro.resources
 D:\23-24_HK1\CT291_LTUD\DoAn\TKNT\TKNT\obj\Debug\TKNT.PhongTro.resources
 D:\23-24_HK1\CT291_LTUD\DoAn\TKNT\TKNT\obj\Debug\TKNT.NguoiDung.resources
+D:\23-24_HK1\CT291_LTUD\DoAn\TKNT\TKNT\obj\Debug\TKNT.QuenMK.resources

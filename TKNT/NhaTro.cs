@@ -24,6 +24,9 @@ namespace TKNT
             InitializeComponent();
             labelHelloNT.Text = "Hello, " + user;
             username = user;
+            
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
         
@@ -127,7 +130,7 @@ namespace TKNT
 
             string sql = "update NHA_TRO set NT_TEN = N'" + tentro + "', NT_DIACHI = N'" + diachi + "', NT_MOTA = N'" + mota + "' where NT_MA = '" + matro + "' and CNT_MA = '" + chutro + "'";
             func.CapNhat(sql, conn);
-
+            MessageBox.Show("Cập nhật nhà trọ "+matro+" thành công.");
             func.HienthiDulieuDG(dataGridView1, "select * from NHA_TRO where CNT_MA = (select CNT_MA from CHU_NHA_TRO where username = '" + username + "')", conn);
         }
 
@@ -169,6 +172,12 @@ namespace TKNT
                 MessageBox.Show("Vui lòng chọn hàng dữ liệu để xóa.");
             }
 
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            ChuTro ct = new ChuTro(username);
+            ct.ShowDialog();
         }
     }
 }

@@ -70,6 +70,17 @@ namespace TKNT
              reader.Close();
         }
 
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            QuenMK mk = new QuenMK();
+            mk.ShowDialog();
+        }
+
        
     }
 }

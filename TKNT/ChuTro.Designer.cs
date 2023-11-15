@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChuTro));
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtUser = new System.Windows.Forms.TextBox();
@@ -71,6 +72,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.txtUser);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label_pic_ct);
@@ -105,6 +107,8 @@
             // 
             // txtUser
             // 
+            this.txtUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.txtUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtUser.Location = new System.Drawing.Point(99, 45);
             this.txtUser.Multiline = true;
             this.txtUser.Name = "txtUser";
@@ -132,22 +136,26 @@
             // 
             // btnLoad_CT
             // 
+            this.btnLoad_CT.BackColor = System.Drawing.Color.Orange;
+            this.btnLoad_CT.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLoad_CT.Location = new System.Drawing.Point(691, 156);
             this.btnLoad_CT.Name = "btnLoad_CT";
             this.btnLoad_CT.Size = new System.Drawing.Size(75, 23);
             this.btnLoad_CT.TabIndex = 7;
             this.btnLoad_CT.Text = "Tải ảnh lên";
-            this.btnLoad_CT.UseVisualStyleBackColor = true;
+            this.btnLoad_CT.UseVisualStyleBackColor = false;
             this.btnLoad_CT.Click += new System.EventHandler(this.btnLoad_CT_Click);
             // 
             // btnCapNhat
             // 
+            this.btnCapNhat.BackColor = System.Drawing.Color.Orange;
+            this.btnCapNhat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCapNhat.Location = new System.Drawing.Point(19, 247);
             this.btnCapNhat.Name = "btnCapNhat";
             this.btnCapNhat.Size = new System.Drawing.Size(127, 23);
             this.btnCapNhat.TabIndex = 0;
             this.btnCapNhat.Text = "Cập nhật thông tin";
-            this.btnCapNhat.UseVisualStyleBackColor = true;
+            this.btnCapNhat.UseVisualStyleBackColor = false;
             this.btnCapNhat.Click += new System.EventHandler(this.btnCapNhat_Click);
             // 
             // pictureCT
@@ -161,16 +169,19 @@
             // 
             // btnLuu
             // 
+            this.btnLuu.BackColor = System.Drawing.Color.Orange;
+            this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLuu.Location = new System.Drawing.Point(182, 247);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(75, 23);
             this.btnLuu.TabIndex = 0;
             this.btnLuu.Text = "Lưu";
-            this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.UseVisualStyleBackColor = false;
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // dateTimeBirthdayCT
             // 
+            this.dateTimeBirthdayCT.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.dateTimeBirthdayCT.Location = new System.Drawing.Point(99, 101);
             this.dateTimeBirthdayCT.Name = "dateTimeBirthdayCT";
             this.dateTimeBirthdayCT.Size = new System.Drawing.Size(242, 21);
@@ -178,16 +189,20 @@
             // 
             // btnSua
             // 
+            this.btnSua.BackColor = System.Drawing.Color.Orange;
+            this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSua.Location = new System.Drawing.Point(314, 247);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(75, 23);
             this.btnSua.TabIndex = 0;
             this.btnSua.Text = "Sửa";
-            this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.UseVisualStyleBackColor = false;
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // txtEmail
             // 
+            this.txtEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtEmail.Location = new System.Drawing.Point(99, 180);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(242, 21);
@@ -195,26 +210,32 @@
             // 
             // btnXoa
             // 
+            this.btnXoa.BackColor = System.Drawing.Color.Orange;
+            this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnXoa.Location = new System.Drawing.Point(448, 247);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(98, 23);
             this.btnXoa.TabIndex = 0;
             this.btnXoa.Text = "Xóa tài khoản";
-            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.UseVisualStyleBackColor = false;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.Color.Orange;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Location = new System.Drawing.Point(732, 247);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 0;
             this.button3.Text = "Thoát";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // txtPhone
             // 
+            this.txtPhone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.txtPhone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPhone.Location = new System.Drawing.Point(99, 153);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(242, 21);
@@ -222,12 +243,14 @@
             // 
             // btnThemNT
             // 
+            this.btnThemNT.BackColor = System.Drawing.Color.Orange;
+            this.btnThemNT.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnThemNT.Location = new System.Drawing.Point(591, 247);
             this.btnThemNT.Name = "btnThemNT";
             this.btnThemNT.Size = new System.Drawing.Size(106, 23);
             this.btnThemNT.TabIndex = 2;
             this.btnThemNT.Text = "Thêm nhà trọ";
-            this.btnThemNT.UseVisualStyleBackColor = true;
+            this.btnThemNT.UseVisualStyleBackColor = false;
             this.btnThemNT.Click += new System.EventHandler(this.button4_Click);
             // 
             // label7
@@ -242,6 +265,8 @@
             // 
             // txtDiachi
             // 
+            this.txtDiachi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.txtDiachi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDiachi.Location = new System.Drawing.Point(99, 127);
             this.txtDiachi.Name = "txtDiachi";
             this.txtDiachi.Size = new System.Drawing.Size(242, 21);
@@ -259,6 +284,8 @@
             // 
             // txtHoten
             // 
+            this.txtHoten.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.txtHoten.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtHoten.Location = new System.Drawing.Point(99, 75);
             this.txtHoten.Name = "txtHoten";
             this.txtHoten.Size = new System.Drawing.Size(242, 21);
@@ -296,6 +323,8 @@
             // 
             // txtMaCT
             // 
+            this.txtMaCT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.txtMaCT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtMaCT.Location = new System.Drawing.Point(99, 19);
             this.txtMaCT.Name = "txtMaCT";
             this.txtMaCT.Size = new System.Drawing.Size(242, 21);
@@ -314,6 +343,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(302, 13);
             this.label1.Name = "label1";
@@ -324,6 +354,7 @@
             // labelHelloCT
             // 
             this.labelHelloCT.AutoSize = true;
+            this.labelHelloCT.BackColor = System.Drawing.Color.Transparent;
             this.labelHelloCT.Location = new System.Drawing.Point(759, 9);
             this.labelHelloCT.Name = "labelHelloCT";
             this.labelHelloCT.Size = new System.Drawing.Size(37, 13);
@@ -333,6 +364,7 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
+            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel1.Location = new System.Drawing.Point(12, 9);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(56, 13);
@@ -345,6 +377,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(881, 398);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.labelHelloCT);
